@@ -9,11 +9,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class ContactController extends AbstractController
 {
     /**
-     * @Route("/contact", name="index")
+     * @Route("/contact", name="contactIndex")
      */
-    public function index(): Response
+    public function contactIndex(): Response
     {
-        return $this->render('contact/contact.html.twig');
+        return $this->render('contact/index.html.twig');
     }
     
 }

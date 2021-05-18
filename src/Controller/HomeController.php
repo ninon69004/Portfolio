@@ -9,9 +9,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/home", name="index")
+     * @Route("/home", name="homeIndex")
      */
-    public function index(): Response
+    public function homeIndex(): Response
     {
         return $this->render('home/index.html.twig');
     }
@@ -29,11 +29,5 @@ class HomeController extends AbstractController
     {
         return $this->render('home/hobbies.html.twig');
     }
-    /**
-     * @Route("/contact", name="contact")
-     */
-    public function form(): Response
-    {
-        return $this->render('contact/contact.html.twig');
-    }
+   
 }
